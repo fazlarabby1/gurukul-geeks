@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Form from './components/Form/Form';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='max-w-[1440px] mx-auto'>
+      <Navbar />
+      <h1 className='text-2xl text-center font-bold my-9'>Hi Khalid, Welcome to Geeks of Gurukul</h1>
+      <Form />
     </div>
   );
 }
